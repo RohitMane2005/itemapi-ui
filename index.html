@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Item Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Item Management System</h1>
+  <p>Spring Boot Backend + Simple UI</p>
+</header>
+
+<main>
+
+  <!-- ADD ITEM -->
+  <section class="card">
+    <h2>Add Item</h2>
+
+    <input id="name" placeholder="Item Name" />
+    <span class="error" id="nameError"></span>
+
+    <input id="description" placeholder="Description" />
+    <span class="error" id="descError"></span>
+
+    <input id="price" type="number" placeholder="Price" />
+    <span class="error" id="priceError"></span>
+
+    <input id="quantity" type="number" placeholder="Quantity" />
+    <span class="error" id="qtyError"></span>
+
+    <button onclick="addItem()">Add Item</button>
+
+    <div class="spinner" id="addSpinner"></div>
+    <div class="badge success" id="addSuccess"></div>
+    <div class="badge error-badge" id="addFail"></div>
+  </section>
+
+  <!-- GET ITEM -->
+  <section class="card">
+    <h2>Get Item by ID</h2>
+
+    <input id="itemId" type="number" placeholder="Item ID" />
+    <span class="error" id="idError"></span>
+
+    <button onclick="getItem()">Get Item</button>
+
+    <div class="spinner" id="getSpinner"></div>
+    <pre class="result" id="getResult"></pre>
+    <div class="badge error-badge" id="getFail"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Item API Demo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
