@@ -1,4 +1,4 @@
-const BASE_URL = "https://itemapi-springboot-production.up.railway.app/";
+const BASE_URL = "https://itemapi-springboot-production.up.railway.app";
 
 function clearMessages() {
   document.querySelectorAll(".error").forEach(e => e.textContent = "");
